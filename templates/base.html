@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>App</title>
+  <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+</head>
+
+<body>
+  {% block content %}{% endblock %}
+
+  <!-- Hot reload script -->
+  {% if DEBUG %}
+  {{ hot_reload.script(url_for('hot-reload')) | safe }}
+  {% endif %}
+</body>
+
+</html>
