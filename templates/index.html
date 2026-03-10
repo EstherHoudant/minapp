@@ -1,27 +1,54 @@
 {% extends "base.html" %}
 
 {% block content %}
-
-<br>Bonjour tout le monde et bienvenu.e.s sur la page de NOISE !! (N.B: cette page a été codée par 25houdant en cours d'info, ne lui tenez pas rigueur svp)
+<span style="background-color: greenyellow;">
+<br>Bonjour tout le monde et bienvenu.e.s sur la page de NOISE !!
+</span>
+<br> (N.B: cette page a été codée par 25houdant en cours d'info, ne lui tenez pas rigueur svp)
         <br>Un petit index pour commencer :
-        <a href="#pole_action" >Pôle action (des photos de manifs)</a>
-        <br><a href="#pole_com" >Pôle com (nos meilleures affiches)</a>
-        <br><a href="#pole_relations" >Pôle relations (les gens avec qui on discute)</a>
-        <p>
+        <br>Petite présentation de Noise
+        <br><a href="#pole_action" >-Pôle action (des photos de manifs)</a>
+        <br><a href="#pole_com" >-Pôle com (nos meilleures affiches)</a>
+        <br><a href="#pole_relations" >-Pôle relations (les gens avec qui on discute)</a>
+         <div id="item-a1">
+            Petite présentation :
+            <br>NOISE est le Nouvel Observatoire des Inégalités Sociales et Environnementales. C'est une association (club BDE),
+            qui mène différents projets écolos, et c'est surtout l'endroit rêvé pour des discussions et débats infinis sur "mais en fait la décroissance est-ce possible?"
+        </div>
+        <div id="item-b1">
+            <img src="{{ url_for('static', path='/Noise.webp') }}">
+            </div>
+        <div class="container"> 
+         <div id="item-c">
            <a name="pole_action"> Pole action</a>
-            Voili voilou il y a une manif le 11 février contre la loi Duplomb (oupsi doupsi je n'y vais pas)
+           <br> Voili voilou il y a une manif le 11 février contre la loi Duplomb (oupsi doupsi je n'y vais pas)
+           <br>Les autres infos arrivent bientôt !
 
-        </p>
-        <p>
+        </div>
+       
+        <div id="item-b">
            <a name="pole_com"> Pole com</a> 
-           Une affiche sur les trajets en train. 
-        </p>
+           <br>Une affiche sur les trajets en train. 
+           <br><img src="{{ url_for('static', path='/trainvavion.png') }}"style="width: 20vw; min-width: 100px;">
+           <br>"10 bonnes raisons de devenir végétarien.ne"
+           <br>Pourquoi manger des fruits et légumes de saison ?
+           
+        </div>
+        <div id="item-d">
+            <a name="pole_relations"> Pole relations</a>
+            <br><span style >NOISE</span>  fait partie de l'Alliance Etudiante ( nom voué à changer).
+            La liste des assos écolos des autres écoles :<br>
+            - Ecocampus ()<br>
+            - Ecosciences ()<br>
+
+        </div>
+        </div>
         <span style="background-color: lightblue;">
-            
+            Merci d'avoir consulté cette page, à bientôt !
         </span>
         <span style="background-color: #ddd;"> <!--code hexadécimal pour ddd,quand meme 3 chiffres pour rgb-->
-            Le fronton des Mines me fait face
-        </span>"
+            
+        </span>
         
     <!--actual content-->
 
