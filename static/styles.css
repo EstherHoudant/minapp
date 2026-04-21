@@ -5,24 +5,29 @@
   grid-template-areas:
     "header header header header"
     "main   main   sidebar  sidebar"
-    "footer footer sidebar sidebar";
+    "footer footer footer footer ";
 }
 
 #item-a {
     grid-area: header;
-    background-color: #ffba5a;
+    background-color: #4be1d5;
+    padding : 25px;
+
 }
 #item-b {
     grid-area: main;
-    background-color: #3282b8;
+    background-color: #72b740;
+    padding : 25px;
 }
 #item-c {
     grid-area: sidebar;
-    background-color: #db3056;
+    background-color: #13b43e;
+    padding : 25px;
 }
 #item-d {
     grid-area: footer;
     background-color: #7fa998;
+    padding : 25px;
 }
 
 .container2 {
@@ -35,10 +40,11 @@
 
 #item-a1 {
     grid-area: texte;
-    background-color: #ffba5a;
+    background-color: #4be1d5;
 }
 
 #item-b1 {
     grid-area: image;
-    background-color: #db3056;
+    background-color: #ffffff;
+    
 }
